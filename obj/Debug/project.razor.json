@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "/Users/kristianmandrup/repos/csharp-projects/work/teliadk/Switchr/Switchr.API.Tests/Switchr.API.Tests.csproj",
+  "TargetFramework": "v4.6.2",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}

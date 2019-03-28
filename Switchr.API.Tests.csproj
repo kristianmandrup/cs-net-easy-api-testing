@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E813525-3A68-4499-9EAE-C24DD148F3B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Switchr.API.Tests</RootNamespace>
+    <AssemblyName>Switchr.API.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Test\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Dev|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Dev\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PreProd|AnyCPU'">
+    <OutputPath>bin\PreProd\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Prod|AnyCPU'">
+    <OutputPath>bin\Prod\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=5.2.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.2.0\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.4.3.1\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FakeItEasy, Version=5.0.0.0, Culture=neutral, PublicKeyToken=eff28e2146d5fd2c, processorArchitecture=MSIL">
+      <HintPath>..\packages\FakeItEasy.5.0.1\lib\net45\FakeItEasy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Mono.Cecil, Version=0.10.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\Smocks.0.7.3\lib\net45\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb, Version=0.10.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\Smocks.0.7.3\lib\net45\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb, Version=0.10.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\Smocks.0.7.3\lib\net45\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks, Version=0.10.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\Smocks.0.7.3\lib\net45\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq, Version=4.10.0.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.10.1\lib\net45\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NSubstitute, Version=4.0.0.0, Culture=neutral, PublicKeyToken=92dd2e9066daa5ca, processorArchitecture=MSIL">
+      <HintPath>..\packages\NSubstitute.4.0.0\lib\net46\NSubstitute.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.8.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.8.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Smocks, Version=0.7.3.0, Culture=neutral, PublicKeyToken=8fd36cb3814cff51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Smocks.0.7.3\lib\net45\Smocks.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap, Version=4.4.3.564, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StructureMap.4.4.3\lib\net45\StructureMap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.1\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Http.Tracing, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Tracing.5.2.3\lib\net45\System.Web.Http.Tracing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Westwind.Utilities, Version=3.0.24.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Westwind.Utilities.3.0.24\lib\net46\Westwind.Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ApiExceptionDeserializer.cs" />
+    <Compile Include="Common\ApiException.cs" />
+    <Compile Include="Common\BaseControllerTest.cs" />
+    <Compile Include="Common\DependencyMocker.cs" />
+    <Compile Include="Common\ErrorType.cs" />
+    <Compile Include="Common\ConfigHelper.cs" />
+    <Compile Include="Common\Db\DbDataBuilder.cs" />
+    <Compile Include="Common\Db\DbMocker.cs" />
+    <Compile Include="Common\Db\Models\Ban.cs" />
+    <Compile Include="Common\Db\Models\Data.cs" />
+    <Compile Include="Common\Db\Models\Env.cs" />
+    <Compile Include="Common\Db\Models\Envs.cs" />
+    <Compile Include="Common\Db\Models\Subscription.cs" />
+    <Compile Include="Common\Db\Models\User.cs" />
+    <Compile Include="Common\Db\FixtureLoaderTest.cs" />
+    <Compile Include="Common\FakeRegistry.cs" />
+    <Compile Include="Common\Db\Models\FixtureLoader.cs" />
+    <Compile Include="Common\HttpErrorExtensions.cs" />
+    <Compile Include="Common\InvalidResultException.cs" />
+    <Compile Include="Common\MockFactory.cs" />
+    <Compile Include="Common\Moq\MockMoq.cs" />
+    <Compile Include="Common\Moq\MoqSetup.cs" />
+    <Compile Include="Common\ResponseChecker.cs" />
+    <Compile Include="Common\ResultExpectation.cs" />
+    <Compile Include="Common\ScenarioResult.cs" />
+    <Compile Include="Common\TestOutput\TestPage.cs" />
+    <Compile Include="Common\TestDataStore.cs" />
+    <Compile Include="Common\TestOutput\TableBody.cs" />
+    <Compile Include="Common\TestOutput\TableHeader.cs" />
+    <Compile Include="Common\TestPrincipal.cs" />
+    <Compile Include="Common\TestResult.cs" />
+    <Compile Include="Controllers\Ban\BanAccessRightsControllerTest.cs" />
+    <Compile Include="Controllers\Ban\BanControllerTest.cs" />
+    <Compile Include="Controllers\Ban\BanTest.cs" />
+    <Compile Include="Controllers\Ban\CreditAgreementControllerTest.cs" />
+    <Compile Include="Controllers\Ban\InvoiceControllerTest.cs" />
+    <Compile Include="Controllers\Broadband\BroadbandTest.cs" />
+    <Compile Include="Controllers\Broadband\BroadbandControllerTest.cs" />
+    <Compile Include="Controllers\Catalog\CatalogControllerTest.cs" />
+    <Compile Include="Controllers\DummyTests.cs" />
+    <Compile Include="Controllers\Email\B2BEmailControllerTest.cs" />
+    <Compile Include="Controllers\Email\B2CEmailControllerTest.cs" />
+    <Compile Include="Controllers\Email\EmailControllerTest.cs" />
+    <Compile Include="Controllers\Email\EmailTest.cs" />
+    <Compile Include="Controllers\Handover\HandoverControllerTest.cs" />
+    <Compile Include="Controllers\Msisdn\MsisdnControllerTest.cs" />
+    <Compile Include="Controllers\Onboarding\OrderControllerTest.cs" />
+    <Compile Include="Controllers\Payment\PaymentControllerTest.cs" />
+    <Compile Include="Controllers\Permission\PermissionControllerTest.cs" />
+    <Compile Include="Controllers\SMS\SMSControllerTest.cs" />
+    <Compile Include="Controllers\SocialSecurityNumber\SocialSecurityNumberControllerTest.cs" />
+    <Compile Include="Controllers\Subscription\SubscriptionTest.cs" />
+    <Compile Include="Controllers\Subscription\SubscriptionTopUpControllerTest.cs" />
+    <Compile Include="Controllers\Subscription\SubscriptionControllerTest.cs" />
+    <Compile Include="Controllers\TopUp\TopUpControllerTest.cs" />
+    <Compile Include="Controllers\Usage\UsageControllerTest.cs" />
+    <Compile Include="Controllers\User\UserTest.cs" />
+    <Compile Include="Controllers\User\ValueAddedServicesControllerTest.cs" />
+    <Compile Include="Controllers\User\UserSubscriptionControllerTest.cs" />
+    <Compile Include="Controllers\User\B2BUserControllerTest.cs" />
+    <Compile Include="Controllers\User\B2CUserControllerTest.cs" />
+    <Compile Include="Controllers\User\UserAreaAccessControllerTest.cs" />
+    <Compile Include="Controllers\User\MenuControllerTest.cs" />
+    <Compile Include="Controllers\User\OtacControllerTest.cs" />
+    <Compile Include="Controllers\User\UserBanControllerTest.cs" />
+    <Compile Include="Controllers\User\UserControllerTest.cs" />
+    <Compile Include="Controllers\User\UserCreditAgreementControllerTest.cs" />
+    <Compile Include="Controllers\User\UserHandoverControllerTest.cs" />
+    <Compile Include="Controllers\VAS\SpotifyControllerTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="docs\images\GraphvizMarkdown.png" />
+    <Content Include="docs\images\ScenarioTestInput.png" />
+    <Content Include="docs\images\ScenarioTestOutput.png" />
+    <Content Include="docs\IntegrationTests.html" />
+    <Content Include="docs\test-ui\ScenarioInputTable.html" />
+    <Content Include="docs\test-ui\ScenarioOutputTable.html" />
+    <None Include="docs\ApplicationCode.md" />
+    <None Include="docs\IntegrationTests.pdf" />
+    <None Include="docs\Using-Markdown.md" />
+    <None Include="Fixtures\invalid.ini" />
+    <None Include="Fixtures\data.json" />
+    <None Include="Fixtures\valid.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\IntegrationTests.md" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ConnectionManager\ConnectionManager.csproj">
+      <Project>{2a5a00ea-1793-48c2-84a1-90535cb9855c}</Project>
+      <Name>ConnectionManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Telia.Core.Clients\Telia.Core.Clients.csproj">
+      <Project>{4B74C06F-B319-4204-BED9-9DAAF283BA53}</Project>
+      <Name>Telia.Core.Clients</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TeliaDK\TeliaDK.CDS.ClassLibrary\TeliaDK.CDS.ClassLibrary.csproj">
+      <Project>{389817a8-b1e7-4254-8c0d-3b57d922ef23}</Project>
+      <Name>TeliaDK.CDS.ClassLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TeliaDK\TeliaDK.Core\TeliaDK.Core.csproj">
+      <Project>{89cc1deb-f45f-48a6-93b6-38189bd681e0}</Project>
+      <Name>TeliaDK.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TeliaDK\TeliaDK.Hades.ClassLibrary\TeliaDK.Hades.ClassLibrary.csproj">
+      <Project>{6ca1ac1e-067d-4c30-93a4-16b07ef5cd5a}</Project>
+      <Name>TeliaDK.Hades.ClassLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TeliaDK\TeliaDK.UpgradeManager.ClassLibrary\TeliaDK.UpgradeManager.ClassLibrary.csproj">
+      <Project>{F0AF3114-5AD2-4ED8-B1D5-C5DD494ECAA5}</Project>
+      <Name>TeliaDK.UpgradeManager.ClassLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Switcher.Data\Switchr.Data.csproj">
+      <Project>{095395d1-ec7f-4fa5-943f-b7ea7c489401}</Project>
+      <Name>Switchr.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Switchr.API\Switchr.API.csproj">
+      <Project>{1cf3ef3c-91af-4ecc-8c8f-8d7b60aa9dd9}</Project>
+      <Name>Switchr.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Switchr.Logic\Switchr.Logic.csproj">
+      <Project>{0b17d87c-0ec3-43f1-a9a6-3ee15d6e4cfd}</Project>
+      <Name>Switchr.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Switchr.Models\Switchr.Models.csproj">
+      <Project>{b153bec6-7242-44d2-87b8-99bffd281f9a}</Project>
+      <Name>Switchr.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\FakeItEasy.Analyzer.CSharp.5.0.1\analyzers\dotnet\cs\FakeItEasy.Analyzer.CSharp.dll" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

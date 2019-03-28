@@ -1,0 +1,397 @@
+{
+  "environments": [
+    {
+      "name": "dev",
+      "data": {
+        "permissions": [
+          {
+            "id": 1,
+            "Name": "Services",
+            "PermissionGrouId": 4
+          }
+        ],
+        "permissionGroup": [
+          {
+            "id": 4,
+            "Name": "AdminControl",
+          }
+        ],
+        "brand": [
+          {
+            "id": 1,
+            "Name": "Teliadk"
+          },
+          {
+            "id": 2,
+            "Name": "CallMe"
+          },
+          {
+            "id": 3,
+            "Name": "MitTele"
+          }
+        ],
+        "ValueAddedService": [
+          {
+            "Id":  1, 
+            "Name": "Spotify Premium",
+            "Description": "Spotify Premium Optional Free",
+            "ImageUrl": "www.spotify.com",
+            "IsSelectable": false,
+            "ProductCode": "OSCSF",
+            "ServiceName": "SPOTIFY",
+            "IsVirtual": false,
+            "Price": 69,
+            "IsPaid": false,
+            "IsCancellableThroughMitTelia": false,
+            "IsVisibleInGroupView": false,
+            "IsVisibleInVariantView": false,
+            "IsSwappableThroughMitTelia": false,
+            "RequiresActivation": true,
+            "IsOptionalService": true,
+            "IsCallbackExpected": false,
+            "IsHidden": false,
+            "CancellationRequiresLegalOwnerPermission": false
+          }
+        ],
+        "segment": [
+          {
+            "id": 1,
+            "name": "Private"
+          },
+          {
+            "id": 2,
+            "name": "Business"
+          }
+        ],
+        "userActions": [
+          {
+            "id": 17,
+            "userId": 617,
+            "subscriptionId": "15772924",
+            "newProductKey": "OSCHBO",
+            "oldProductKey": "OSCRLH",
+            "typeId": 1,
+            "MSISDN": "1100000001",
+            "isSent": false,
+            "added": "2018-03-01 11:07:31",
+            "isFinalized": false,
+            "isActivated": false,
+            "isUnderActivated": false,
+            "errorCode": 1,
+            "actionReferenceId": "SS0000000017"
+          }
+        ],
+        "userOnboardingActions": [
+          {
+            "id": 1,
+            "userId": 617,
+            "orderId": 1,
+            "actionId": 2,
+            "completed": true,
+            "onboardingStatusId": 2
+          }
+        ],
+        "onboardingStatus": [
+          {
+            "id": 1,
+            "status": "None"
+          },
+          {
+            "id": 2,
+            "status": "Completed"
+          },
+          {
+            "id": 3,
+            "status": "Failed"
+          }
+        ],
+        "UserOnboardingTrackandTrace": [
+          {
+            "id": 1,
+            "userId": 438,
+            "orderId": 40367953,
+            "deliveryId": 191769,
+            "parcelNumber": "00370726202946377313",
+            "completed": "2018-12-04 08:53:00"
+          }
+        ],
+        "onboardingAction": [
+          {
+            "id": 1,
+            "action": "none"
+          },
+          {
+            "id": 2,
+            "action": "invoice"
+          },
+          {
+            "id": 3,
+            "action": "porting"
+          },
+          {
+            "id": 4,
+            "action": "trackandtrace"
+          },
+          {
+            "id": 5,
+            "action": "handover"
+          },
+          {
+            "id": 6,
+            "action": "accessbroadband"
+          },
+          {
+            "id": 7,
+            "action": "letter"
+          }
+        ],
+        "Users_Bans_AccessRightsRequests": [
+          {
+            "userId": 617,
+            "banId": 803,
+            "requested": "2019-01-22 10:50:00"
+          }
+        ],
+        "users": [
+          {
+            "id": 617,
+            "email": "avinash.choudhary@teliacompany.com",
+            "name": "Avinash",
+            "lastName": "Choudhary",
+            "SSN": "1501940728",
+            "brandId": 1,
+            "segmentId": 1,
+            "roleId": 1,
+            "brandName": "Teliadk",
+            "segmentName": "Private",
+            "bans": [
+              {
+                "id": "802",
+                "banAccessRightsId": 1,
+                "subscriptions": []
+              },
+              {
+                "id": "803",
+                "banAccessRightsId": 1,
+                "subscriptions": [
+                  {
+                    "id": "15772924",
+                    "type": 2,
+                    "typeName": "Voice",
+                    "subscriptionNumber": "GSM04515200032",
+                    "msisdn": "15200032"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 624,
+            "email": "avinash.choudhary@teliacompany.com",
+            "name": "Avinash",
+            "lastName": "Choudhary",
+            "SSN": "",
+            "brandId": 1,
+            "segmentId": 1,
+            "roleId": 1,
+            "brandName": "Teliadk",
+            "segmentName": "Private",
+            "bans": []
+          },
+          {
+            "id": 626,
+            "email": "yashwanth.vankadara@teliacompany.com",
+            "name": "yashwanth",
+            "lastName": "vankadara",
+            "SSN": "",
+            "brandId": 1,
+            "segmentId": 2,
+            "roleId": 1,
+            "brandName": "Teliadk",
+            "segmentName": "Business",
+            "bans": []
+          }
+        ]
+      }
+    },
+    {
+      "name":  "test", 
+      "data": {
+        "users": [
+          {
+            "id": 1,
+            "email": "avinash.choudhary@teliacompany.com",
+            "name": "Avinash",
+            "lastName": "Choudhary",
+            "SSN": "3009761437",
+            "brandId": 1,
+            "segmentId": 1,
+            "roleId": 1,
+            "brandName": "Teliadk",
+            "segmentName": "Private",
+            "bans": [
+              {
+                "id": "1",
+                "banAccessRightsId": 1,
+                "subscriptions": [
+                  {
+                    "id": "15214688",
+                    "type": 3,
+                    "typeName": "Broadband",
+                    "subscriptionNumber": "LLN1100000340",
+                    "msisdn": "0000340"
+                  }
+                ]
+              },
+              {
+                "id": "4",
+                "banAccessRightsId": 1,
+                "subscriptions": [
+                  {
+                    "id": "6599123",
+                    "type": 2,
+                    "typeName": "Voice",
+                    "subscriptionNumber": "GSM04527857113",
+                    "msisdn": "27857113"
+                  }
+                ]
+              },
+              {
+                "id": "5",
+                "banAccessRightsId": 1,
+                "subscriptions": [
+                  {
+                    "id": "13404681",
+                    "type": 2,
+                    "typeName": "Voice",
+                    "subscriptionNumber": "GSM04526834622",
+                    "msisdn": "26834622"
+                  },
+                  {
+                    "id": "14778020",
+                    "type": 1,
+                    "typeName": "AddVas",
+                    "subscriptionNumber": "GSM04526479645",
+                    "msisdn": "26479645"
+                  },
+                  {
+                    "id": "14778024",
+                    "type": 1,
+                    "typeName": "Data",
+                    "subscriptionNumber": "GSM04526476881",
+                    "msisdn": "26476881"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 59,
+            "email": "avinash.choudhary@teliacompany.com",
+            "name": "avinash",
+            "lastName": "choudhary",
+            "SSN": "3108830757",
+            "contactMsisdn": "45688776",
+            "brandId": 3,
+            "segmentId": 1,
+            "roleId": 1,
+            "brandName": "MitTele",
+            "segmentName": "\"Private\".",
+            "bans": []
+          },
+          {
+            "id": 1418,
+            "email": "avinash.choudhary@teliacompany.com",
+            "name": "avinash",
+            "lastName": "choudhary",
+            "SSN": "2802754529",
+            "brandId": 2,
+            "segmentId": 1,
+            "roleId": 1,
+            "brandName": "CallMe",
+            "segmentName": "Private",
+            "bans": []
+          },
+          {
+            "id": 1366,
+            "email": "yashwanth.vankadara@teliacompany.com",
+            "name": "yashwanth",
+            "lastName": "vankadara",
+            "SSN": "2001542330",
+            "contactMsisdn": "28151432",
+            "brandId": 1,
+            "segmentId": 1,
+            "roleId": 1,
+            "brandName": "Teliadk",
+            "segmentName": "Private",
+            "bans": [
+              {
+                "id": "508",
+                "banAccessRightsId": 1,
+                "subscriptions": [
+                  {
+                    "id": "13348338",
+                    "type": 2,
+                    "typeName": "Voice",
+                    "subscriptionNumber": "GSM04528151432",
+                    "msisdn": "528151432"
+                  }
+                ]
+              },
+              {
+                "id": "2582",
+                "banAccessRightsId": 1,
+                "subscriptions": []
+              }
+            ]
+          },
+          {
+            "id": 1462,
+            "email": "yashwanth.vankadara@teliacompany.com",
+            "name": "yashwanth",
+            "lastName": "vankadara",
+            "SSN": "1210950041",
+            "contactMsisdn": "28151432",
+            "brandId": 3,
+            "segmentId": 1,
+            "roleId": 1,
+            "brandName": "MitTele",
+            "segmentName": "Private",
+            "bans": [
+              {
+                "id": "1909",
+                "banAccessRightsId": 1,
+                "subscriptions": []
+              }
+            ]
+          },
+          {
+            "id": 268,
+            "email": "createflowtest6@admin.dk",
+            "name": "createflow",
+            "lastName": "tester",
+            "contactMsisdn": "52189026",
+            "brandId": 1,
+            "segmentId": 2,
+            "roleId": 1,
+            "brandName": "MitTele",
+            "segmentName": "Business",
+            "bans": []
+          },
+          {
+            "id": 278,
+            "email": "avi@test.com",
+            "name": "avi",
+            "lastName": "choudhary",
+            "brandId": 1,
+            "segmentId": 2,
+            "roleId": 1,
+            "brandName": "MitTele",
+            "segmentName": "Business",
+            "bans": []
+          }
+        ]
+      }    
+    }
+  ]
+}

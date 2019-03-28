@@ -1,0 +1,3 @@
+/Users/kristianmandrup/repos/csharp-projects/work/teliadk/Switchr/Switchr.API.Tests/bin/Debug/Switchr.API.Tests.dll.config
+/Users/kristianmandrup/repos/csharp-projects/work/teliadk/Switchr/Switchr.API.Tests/obj/Debug/Switchr.API.Tests.csprojAssemblyReference.cache
+/Users/kristianmandrup/repos/csharp-projects/work/teliadk/Switchr/Switchr.API.Tests/obj/Debug/Switchr.API.Tests.csproj.CoreCompileInputs.cache

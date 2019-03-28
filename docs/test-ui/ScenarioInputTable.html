@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test output</title>
+  <style type="text/css">
+    .passed {
+      background: green;
+      color: black;
+    }
+
+    .notPassed {
+      background: red;
+      color: black;
+    }
+
+    .testName {
+      font-weight: bold;
+    }
+
+    .testHeader {
+      background: grey;
+    }
+
+    thead {
+      background: silver;
+    }
+
+    td,th {
+      padding: .5em;
+    }
+
+    .state {
+      text-align: center;
+    }
+
+    .undefined {
+      background: silver;
+    }
+  </style>
+</head>
+<body>
+  <table border="1">
+    <thead>
+      <th class="testHeader">Test</th>
+      <th>validUser</th>
+      <th>matchingUser</th>
+      <th>canFindUser</th>
+      <th>
+        <input type="text" value="" placeholder="Add case">
+        <button>+</button>
+      </th>
+    </thead>
+    <tbody>
+      <tr class="passed">
+        <td class="testName"><input type="text" value="Change Password"></td>
+        <td class="state">✓</td>
+        <td class="state">✓</td>
+        <td class="state">✓</td>
+        <td class="undefined">-</td>
+      <tr>
+      <tr class="passed">
+        <td class="testName"><input type="text" value="Change Username"></td>
+        <td class="state">✓</td>
+        <td class="state">✓</td>
+        <td class="state">⚠</td>
+        <td class="undefined">-</td>
+      <tr>
+      <tr class="notPassed">
+        <td class="testName"><input type="text" value="Change Email"></td>
+        <td class="state">✓</td>
+        <td class="state">⚠</td>
+        <td class="state">⚠</td>
+        <td class="undefined">-</td>
+      <tr>
+      <tr class="addTest">
+        <td class="testName"><input type="text" value="" placeholder="Add test"></td>
+        <td class="undefined">-</td>
+        <td class="undefined">-</td>
+        <td class="undefined">-</td>
+        <td class="undefined">-</td>
+      <tr>
+    </tbody>
+  </table>
+</body>
+</html>
